@@ -35,7 +35,7 @@ file_task 'paho.mqtt.c', :download => :download_tarball do
   cmd "mv paho.mqtt.c-* #{FILES[:download]}"
 end
 
-file_task "libpaho-mqtt3c.#{::FFI::Platform::LIBSUFFIX}", :build => :configure do
+file_task "libpaho-mqtt3c.#{::FFI::Platform::LIBSUFFIX}", :build => :download do
   cmd "/usr/bin/env sh -c 'cd #{FILES[:download]} && make'"
   cmd "cp #{FILES[:download]}/build/output/#{FILES[:build]} ."
 end
