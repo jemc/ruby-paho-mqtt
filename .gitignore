@@ -1,0 +1,5 @@
+*.gem
+Gemfile.lock
+ext/paho/mqtt/paho.mqtt.c.tar.gz
+ext/paho/mqtt/paho.mqtt.c
+ext/paho/mqtt/libpaho-mqtt3c.*
